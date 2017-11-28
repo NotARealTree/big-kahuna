@@ -1,0 +1,4 @@
+rootProject.name = 'big-kahuna'
+include 'kahuna-cli'
+include 'kahuna-core'
+

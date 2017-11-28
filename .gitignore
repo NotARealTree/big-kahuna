@@ -1,0 +1,8 @@
+kahuna.yml
+build/
+out/
+.idea/
+.gradle/
+*.iml
+*.ipr
+*.iws
