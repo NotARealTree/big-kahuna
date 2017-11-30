@@ -2,13 +2,13 @@ package com.notarealtree.bigkahuna.services;
 
 import com.notarealtree.bigkahuna.model.NoteId;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
+import javax.ws.rs.*;
+import javax.ws.rs.core.MediaType;
 import java.util.Set;
 
 @Path("/kahuna/note")
+@Consumes(MediaType.APPLICATION_JSON)
+@Produces(MediaType.APPLICATION_JSON)
 public interface NoteService {
     @POST
     @Path("/")

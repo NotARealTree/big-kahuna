@@ -1,5 +1,6 @@
 package com.notarealtree.bigkahuna;
 
+import com.notarealtree.bigkahuna.model.NoteId;
 import com.notarealtree.bigkahuna.services.KahunaService;
 import feign.Feign;
 import feign.jackson.JacksonDecoder;
@@ -32,7 +33,9 @@ public class KahunaCli {
 
     private void handleInput(String input) {
         if (input.startsWith("ls notes")) {
-            String notes = kahunaService.getNotes().stream().reduce((i1, i2) -> String.format("%s\n%s", i1, i2)).get();
+            String notes = kahunaService.getNotes().stream()
+                    .map(NoteId::id)
+                    .reduce((i1, i2) -> String.format("%s\n%s", i1, i2)).get();
             System.out.println(notes);
         } else if (input.startsWith("add note")) {
             String note = input.substring("add note ".length());

@@ -9,7 +9,7 @@ public class S3Config {
     private String accessKeyId;
     @JsonProperty("secret-access-key")
     private String secretAccessKey;
-    @JsonProperty("bucketName")
+    @JsonProperty("bucket-name")
     private String bucketName;
 
     public String getS3region() {

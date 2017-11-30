@@ -20,7 +20,7 @@ public interface KahunaService {
     void updateNote(@Param("id") String id, String text);
 
     @RequestLine("GET /kahuna/note/preview")
-    Set<String> getNotes();
+    Set<NoteId> getNotes();
 
     @RequestLine("GET /kahuna/note/{id}")
     String getNote(@Param("id") String id);
