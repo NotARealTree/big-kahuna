@@ -1,6 +1,6 @@
 kahuna.yml
 build/
-out/
+**/out/
 .idea/
 .gradle/
 *.iml

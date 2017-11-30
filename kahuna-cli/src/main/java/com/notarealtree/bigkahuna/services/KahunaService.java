@@ -24,4 +24,7 @@ public interface KahunaService {
 
     @RequestLine("GET /kahuna/note/{id}")
     String getNote(@Param("id") String id);
+
+    @RequestLine("DELETE /kahuna/note/{id}")
+    void deleteNote(@Param("id") String id);
 }

@@ -38,4 +38,9 @@ public class NoteResource implements NoteService {
     public String getNote(NoteId id) {
         return s3Connector.getNote(id);
     }
+
+    @Override
+    public void deleteNote(NoteId id) {
+        s3Connector.deleteNote(id);
+    }
 }

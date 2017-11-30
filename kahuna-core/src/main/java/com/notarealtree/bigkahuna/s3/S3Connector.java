@@ -61,4 +61,8 @@ public class S3Connector {
         writer.close();
         return file;
     }
+
+    public void deleteNote(NoteId id) {
+        s3.deleteObject(bucketName, id.id());
+    }
 }

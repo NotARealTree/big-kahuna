@@ -25,4 +25,8 @@ public interface NoteService {
     @GET
     @Path("/{id}")
     String getNote(@PathParam("id") NoteId id);
+
+    @DELETE
+    @Path("/{id}")
+    void deleteNote(@PathParam("id") NoteId id);
 }

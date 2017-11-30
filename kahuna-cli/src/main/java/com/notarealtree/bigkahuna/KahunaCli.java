@@ -25,7 +25,7 @@ public class KahunaCli {
 
     private void run() {
         String input;
-        while(true) {
+        while (true) {
             input = scanner.nextLine();
             handleInput(input);
         }
@@ -43,6 +43,9 @@ public class KahunaCli {
         } else if (input.startsWith("get note")) {
             String noteId = input.substring("get note ".length());
             System.out.println(kahunaService.getNote(noteId));
+        } else if (input.startsWith("delete note")) {
+            String noteId = input.substring("delete note ".length());
+            kahunaService.deleteNote(noteId);
         }
     }
 }
