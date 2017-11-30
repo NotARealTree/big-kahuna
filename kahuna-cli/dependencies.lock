@@ -1,0 +1,356 @@
+{
+    "checkstyle": {
+        "com.puppycrawl.tools:checkstyle": {
+            "locked": "7.5.1"
+        }
+    },
+    "compile": {
+        "big-kahuna:kahuna-core": {
+            "project": true
+        },
+        "com.amazonaws:aws-java-sdk": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.11.236"
+        },
+        "com.google.dagger:dagger": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.2.1"
+        },
+        "io.github.openfeign:feign-core": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "io.github.openfeign:feign-jackson": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "org.immutables:value": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.5.5"
+        }
+    },
+    "compileClasspath": {
+        "big-kahuna:kahuna-core": {
+            "project": true
+        },
+        "com.amazonaws:aws-java-sdk": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.11.236"
+        },
+        "com.google.dagger:dagger": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.2.1"
+        },
+        "io.github.openfeign:feign-core": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "io.github.openfeign:feign-jackson": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "org.immutables:value": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.5.5"
+        }
+    },
+    "default": {
+        "big-kahuna:kahuna-core": {
+            "project": true
+        },
+        "com.amazonaws:aws-java-sdk": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.11.236"
+        },
+        "com.google.dagger:dagger": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.2.1"
+        },
+        "io.github.openfeign:feign-core": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "io.github.openfeign:feign-jackson": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "org.immutables:value": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.5.5"
+        }
+    },
+    "runtime": {
+        "big-kahuna:kahuna-core": {
+            "project": true
+        },
+        "com.amazonaws:aws-java-sdk": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.11.236"
+        },
+        "com.google.dagger:dagger": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.2.1"
+        },
+        "io.github.openfeign:feign-core": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "io.github.openfeign:feign-jackson": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "org.immutables:value": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.5.5"
+        }
+    },
+    "runtimeClasspath": {
+        "big-kahuna:kahuna-core": {
+            "project": true
+        },
+        "com.amazonaws:aws-java-sdk": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.11.236"
+        },
+        "com.google.dagger:dagger": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.2.1"
+        },
+        "io.github.openfeign:feign-core": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "io.github.openfeign:feign-jackson": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "org.immutables:value": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.5.5"
+        }
+    },
+    "testCompile": {
+        "big-kahuna:kahuna-core": {
+            "project": true
+        },
+        "com.amazonaws:aws-java-sdk": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.11.236"
+        },
+        "com.google.dagger:dagger": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.2.1"
+        },
+        "io.github.openfeign:feign-core": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "io.github.openfeign:feign-jackson": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "junit:junit": {
+            "locked": "4.12",
+            "requested": "4.12"
+        },
+        "org.immutables:value": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.5.5"
+        }
+    },
+    "testCompileClasspath": {
+        "big-kahuna:kahuna-core": {
+            "project": true
+        },
+        "com.amazonaws:aws-java-sdk": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.11.236"
+        },
+        "com.google.dagger:dagger": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.2.1"
+        },
+        "io.github.openfeign:feign-core": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "io.github.openfeign:feign-jackson": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "junit:junit": {
+            "locked": "4.12",
+            "requested": "4.12"
+        },
+        "org.immutables:value": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.5.5"
+        }
+    },
+    "testRuntime": {
+        "big-kahuna:kahuna-core": {
+            "project": true
+        },
+        "com.amazonaws:aws-java-sdk": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.11.236"
+        },
+        "com.google.dagger:dagger": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.2.1"
+        },
+        "io.github.openfeign:feign-core": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "io.github.openfeign:feign-jackson": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "junit:junit": {
+            "locked": "4.12",
+            "requested": "4.12"
+        },
+        "org.immutables:value": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.5.5"
+        }
+    },
+    "testRuntimeClasspath": {
+        "big-kahuna:kahuna-core": {
+            "project": true
+        },
+        "com.amazonaws:aws-java-sdk": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.11.236"
+        },
+        "com.google.dagger:dagger": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "1.2.1"
+        },
+        "io.github.openfeign:feign-core": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "io.github.openfeign:feign-jackson": {
+            "locked": "9.5.1",
+            "requested": "9.5.1"
+        },
+        "junit:junit": {
+            "locked": "4.12",
+            "requested": "4.12"
+        },
+        "org.immutables:value": {
+            "firstLevelTransitive": [
+                "big-kahuna:kahuna-core"
+            ],
+            "locked": "2.5.5"
+        }
+    }
+}

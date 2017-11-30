@@ -1,0 +1,197 @@
+{
+    "apt": {
+        "com.google.dagger:dagger-compiler": {
+            "locked": "2.13",
+            "requested": "2.13"
+        }
+    },
+    "checkstyle": {
+        "com.puppycrawl.tools:checkstyle": {
+            "locked": "7.5.1"
+        }
+    },
+    "compile": {
+        "com.amazonaws:aws-java-sdk": {
+            "locked": "1.11.236",
+            "requested": "1.9.6"
+        },
+        "com.google.dagger:dagger": {
+            "locked": "2.13",
+            "requested": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "locked": "1.2.1",
+            "requested": "1.2.1"
+        },
+        "org.immutables:value": {
+            "locked": "2.5.5",
+            "requested": "2.5.5"
+        }
+    },
+    "compileClasspath": {
+        "com.amazonaws:aws-java-sdk": {
+            "locked": "1.11.236",
+            "requested": "1.9.6"
+        },
+        "com.google.dagger:dagger": {
+            "locked": "2.13",
+            "requested": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "locked": "1.2.1",
+            "requested": "1.2.1"
+        },
+        "org.immutables:value": {
+            "locked": "2.5.5",
+            "requested": "2.5.5"
+        }
+    },
+    "default": {
+        "com.amazonaws:aws-java-sdk": {
+            "locked": "1.11.236",
+            "requested": "1.9.6"
+        },
+        "com.google.dagger:dagger": {
+            "locked": "2.13",
+            "requested": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "locked": "1.2.1",
+            "requested": "1.2.1"
+        },
+        "org.immutables:value": {
+            "locked": "2.5.5",
+            "requested": "2.5.5"
+        }
+    },
+    "processor": {
+        "com.google.dagger:dagger-compiler": {
+            "locked": "2.13",
+            "requested": "2.13"
+        }
+    },
+    "runtime": {
+        "com.amazonaws:aws-java-sdk": {
+            "locked": "1.11.236",
+            "requested": "1.9.6"
+        },
+        "com.google.dagger:dagger": {
+            "locked": "2.13",
+            "requested": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "locked": "1.2.1",
+            "requested": "1.2.1"
+        },
+        "org.immutables:value": {
+            "locked": "2.5.5",
+            "requested": "2.5.5"
+        }
+    },
+    "runtimeClasspath": {
+        "com.amazonaws:aws-java-sdk": {
+            "locked": "1.11.236",
+            "requested": "1.9.6"
+        },
+        "com.google.dagger:dagger": {
+            "locked": "2.13",
+            "requested": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "locked": "1.2.1",
+            "requested": "1.2.1"
+        },
+        "org.immutables:value": {
+            "locked": "2.5.5",
+            "requested": "2.5.5"
+        }
+    },
+    "testCompile": {
+        "com.amazonaws:aws-java-sdk": {
+            "locked": "1.11.236",
+            "requested": "1.9.6"
+        },
+        "com.google.dagger:dagger": {
+            "locked": "2.13",
+            "requested": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "locked": "1.2.1",
+            "requested": "1.2.1"
+        },
+        "junit:junit": {
+            "locked": "4.12",
+            "requested": "4.12"
+        },
+        "org.immutables:value": {
+            "locked": "2.5.5",
+            "requested": "2.5.5"
+        }
+    },
+    "testCompileClasspath": {
+        "com.amazonaws:aws-java-sdk": {
+            "locked": "1.11.236",
+            "requested": "1.9.6"
+        },
+        "com.google.dagger:dagger": {
+            "locked": "2.13",
+            "requested": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "locked": "1.2.1",
+            "requested": "1.2.1"
+        },
+        "junit:junit": {
+            "locked": "4.12",
+            "requested": "4.12"
+        },
+        "org.immutables:value": {
+            "locked": "2.5.5",
+            "requested": "2.5.5"
+        }
+    },
+    "testRuntime": {
+        "com.amazonaws:aws-java-sdk": {
+            "locked": "1.11.236",
+            "requested": "1.9.6"
+        },
+        "com.google.dagger:dagger": {
+            "locked": "2.13",
+            "requested": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "locked": "1.2.1",
+            "requested": "1.2.1"
+        },
+        "junit:junit": {
+            "locked": "4.12",
+            "requested": "4.12"
+        },
+        "org.immutables:value": {
+            "locked": "2.5.5",
+            "requested": "2.5.5"
+        }
+    },
+    "testRuntimeClasspath": {
+        "com.amazonaws:aws-java-sdk": {
+            "locked": "1.11.236",
+            "requested": "1.9.6"
+        },
+        "com.google.dagger:dagger": {
+            "locked": "2.13",
+            "requested": "2.13"
+        },
+        "io.dropwizard:dropwizard-core": {
+            "locked": "1.2.1",
+            "requested": "1.2.1"
+        },
+        "junit:junit": {
+            "locked": "4.12",
+            "requested": "4.12"
+        },
+        "org.immutables:value": {
+            "locked": "2.5.5",
+            "requested": "2.5.5"
+        }
+    }
+}
