@@ -3,6 +3,7 @@ package com.notarealtree.bigkahuna.s3;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.model.S3ObjectSummary;
 import com.notarealtree.bigkahuna.dagger.annotations.S3BucketName;
+import com.notarealtree.bigkahuna.model.NoteId;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -39,8 +40,8 @@ public class S3Connector {
                 .collect(Collectors.toSet());
     }
 
-    public String getNote(String id) {
-        return s3.getObjectAsString(bucketName, id);
+    public String getNote(NoteId id) {
+        return s3.getObjectAsString(bucketName, id.id());
     }
 
     public void putNote(String id, String text) {

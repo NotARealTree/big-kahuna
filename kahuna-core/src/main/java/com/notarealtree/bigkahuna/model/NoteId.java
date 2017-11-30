@@ -10,6 +10,10 @@ import org.immutables.value.Value;
 public interface NoteId {
     String id();
 
+    static NoteId valueOf(String id) {
+        return NoteId.builder().id(id).build();
+    }
+
     static ImmutableNoteId.Builder builder() {
         return ImmutableNoteId.builder();
     }
