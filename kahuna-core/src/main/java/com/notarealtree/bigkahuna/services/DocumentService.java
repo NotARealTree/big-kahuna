@@ -2,6 +2,7 @@ package com.notarealtree.bigkahuna.services;
 
 import com.notarealtree.bigkahuna.model.DocumentId;
 
+import com.notarealtree.bigkahuna.model.PartialDocument;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
@@ -11,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 public interface DocumentService {
     @POST
     @Path("/")
-    DocumentId addDocument(String title, String text);
+    DocumentId addDocument(PartialDocument partialDocument);
 
     @POST
     @Path("/{id}")

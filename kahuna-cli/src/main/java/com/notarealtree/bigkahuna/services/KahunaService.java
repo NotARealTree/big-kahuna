@@ -1,6 +1,8 @@
 package com.notarealtree.bigkahuna.services;
 
+import com.notarealtree.bigkahuna.model.DocumentId;
 import com.notarealtree.bigkahuna.model.NoteId;
+import com.notarealtree.bigkahuna.model.PartialDocument;
 import feign.Body;
 import feign.Headers;
 import feign.Param;
@@ -27,4 +29,9 @@ public interface KahunaService {
 
     @RequestLine("DELETE /kahuna/note/{id}")
     void deleteNote(@Param("id") String id);
+
+    @RequestLine("POST /kahuna/document")
+    @Headers("Content-Type: application/json")
+    @Body("%7B\"partialDocument\": \"{partialDocument}\"%7D")
+    DocumentId addDocument(PartialDocument partialDocument);
 }

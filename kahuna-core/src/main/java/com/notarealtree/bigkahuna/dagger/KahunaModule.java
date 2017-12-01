@@ -21,8 +21,6 @@ public class KahunaModule {
         this.kahunaConfig = kahunaConfig;
     }
 
-
-
     @Provides
     @Singleton
     public AmazonS3 amazonS3() {

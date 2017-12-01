@@ -1,6 +1,8 @@
 package com.notarealtree.bigkahuna;
 
+import com.notarealtree.bigkahuna.model.DocumentId;
 import com.notarealtree.bigkahuna.model.NoteId;
+import com.notarealtree.bigkahuna.model.PartialDocument;
 import com.notarealtree.bigkahuna.services.KahunaService;
 import feign.Feign;
 import feign.jackson.JacksonDecoder;
@@ -46,6 +48,11 @@ public class KahunaCli {
         } else if (input.startsWith("delete note")) {
             String noteId = input.substring("delete note ".length());
             kahunaService.deleteNote(noteId);
+        } else if (input.startsWith("add document")) {
+            String[] docFragments = input.substring("add document ".length()).split(",");
+            PartialDocument doc = PartialDocument.builder().title(docFragments[0]).content(docFragments[1]).build();
+            DocumentId documentId = kahunaService.addDocument(doc);
+            System.out.println(documentId);
         }
     }
 }

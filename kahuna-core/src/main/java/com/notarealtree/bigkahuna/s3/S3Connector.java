@@ -1,8 +1,9 @@
 package com.notarealtree.bigkahuna.s3;
 
 import com.amazonaws.services.s3.AmazonS3;
-import com.amazonaws.services.s3.model.S3ObjectSummary;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.notarealtree.bigkahuna.dagger.annotations.S3BucketName;
+import com.notarealtree.bigkahuna.model.Document;
 import com.notarealtree.bigkahuna.model.NoteId;
 
 import javax.inject.Inject;
@@ -14,6 +15,7 @@ import java.util.stream.Collectors;
 
 @Singleton
 public class S3Connector {
+    private ObjectMapper objectMapper;
     private final String bucketName;
     private final AmazonS3 s3;
 
@@ -21,6 +23,7 @@ public class S3Connector {
     public S3Connector(@S3BucketName String bucketName, AmazonS3 s3) {
         this.bucketName = bucketName;
         this.s3 = s3;
+        this.objectMapper = new ObjectMapper();
     }
 
     public String addNote(String text) {
@@ -62,7 +65,24 @@ public class S3Connector {
         return file;
     }
 
+    private File createJsonFile(Object object) throws IOException {
+        File file = File.createTempFile("doc-", ".json");
+        file.deleteOnExit();
+        Writer writer = new OutputStreamWriter(new FileOutputStream(file));
+        writer.write(objectMapper.writeValueAsString(object));
+        writer.close();
+        return file;
+    }
+
     public void deleteNote(NoteId id) {
         s3.deleteObject(bucketName, id.id());
+    }
+
+    public void addDocument(Document document) {
+        try {
+            s3.putObject(bucketName, document.id().id(), createJsonFile(document));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

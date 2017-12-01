@@ -15,7 +15,8 @@ public class KahunaServer extends Application<KahunaConfig> {
                 .kahunaModule(new KahunaModule(configuration))
                 .build();
 
-        environment.jersey().register(kahunaComponent.kahunaService());
+        environment.jersey().register(kahunaComponent.noteService());
+        environment.jersey().register(kahunaComponent.documentService());
     }
 
     public static void main(String[] args) throws Exception {

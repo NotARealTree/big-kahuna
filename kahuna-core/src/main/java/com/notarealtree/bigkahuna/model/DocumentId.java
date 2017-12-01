@@ -10,8 +10,8 @@ import org.immutables.value.Value;
 public interface DocumentId {
     String id();
 
-    static NoteId valueOf(String id) {
-        return NoteId.builder().id(id).build();
+    static DocumentId valueOf(String id) {
+        return DocumentId.builder().id(id).build();
     }
 
     static ImmutableDocumentId.Builder builder() {
