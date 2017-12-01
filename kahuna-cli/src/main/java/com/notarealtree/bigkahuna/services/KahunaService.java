@@ -1,5 +1,6 @@
 package com.notarealtree.bigkahuna.services;
 
+import com.notarealtree.bigkahuna.model.Document;
 import com.notarealtree.bigkahuna.model.DocumentId;
 import com.notarealtree.bigkahuna.model.NoteId;
 import com.notarealtree.bigkahuna.model.PartialDocument;
@@ -34,4 +35,7 @@ public interface KahunaService {
     @Headers("Content-Type: application/json")
     @Body("%7B\"partialDocument\": \"{partialDocument}\"%7D")
     DocumentId addDocument(PartialDocument partialDocument);
+
+    @RequestLine("GET /kahuna/document/{id}")
+    Document getDocument(@Param("id") String id);
 }

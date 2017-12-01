@@ -1,5 +1,6 @@
 package com.notarealtree.bigkahuna.services;
 
+import com.notarealtree.bigkahuna.model.Document;
 import com.notarealtree.bigkahuna.model.DocumentId;
 
 import com.notarealtree.bigkahuna.model.PartialDocument;
@@ -17,4 +18,8 @@ public interface DocumentService {
     @POST
     @Path("/{id}")
     void updateDocument(@PathParam("id") String id, String text);
+
+    @GET
+    @Path("/{id}")
+    Document getDocument(@PathParam("id") DocumentId id);
 }

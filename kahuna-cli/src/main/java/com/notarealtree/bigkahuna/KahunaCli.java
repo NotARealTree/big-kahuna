@@ -53,6 +53,9 @@ public class KahunaCli {
             PartialDocument doc = PartialDocument.builder().title(docFragments[0]).content(docFragments[1]).build();
             DocumentId documentId = kahunaService.addDocument(doc);
             System.out.println(documentId);
+        } else if (input.startsWith("get document")) {
+            String documentId = input.substring("get document ".length());
+            System.out.println(kahunaService.getDocument(documentId));
         }
     }
 }

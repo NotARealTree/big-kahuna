@@ -1,9 +1,11 @@
 package com.notarealtree.bigkahuna.s3;
 
 import com.amazonaws.services.s3.AmazonS3;
+import com.amazonaws.services.s3.model.S3Object;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.notarealtree.bigkahuna.dagger.annotations.S3BucketName;
 import com.notarealtree.bigkahuna.model.Document;
+import com.notarealtree.bigkahuna.model.DocumentId;
 import com.notarealtree.bigkahuna.model.NoteId;
 
 import javax.inject.Inject;
@@ -83,6 +85,15 @@ public class S3Connector {
             s3.putObject(bucketName, document.id().id(), createJsonFile(document));
         } catch (IOException e) {
             e.printStackTrace();
+        }
+    }
+
+    public Document getDocument(DocumentId id) {
+        try {
+            return objectMapper.readValue(s3.getObjectAsString(bucketName, id.id()), Document.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+            throw new RuntimeException(e);
         }
     }
 }

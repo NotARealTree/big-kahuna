@@ -38,4 +38,9 @@ public class DocumentResource implements DocumentService {
     public void updateDocument(String id, String text) {
 
     }
+
+    @Override
+    public Document getDocument(DocumentId id) {
+        return s3Connector.getDocument(id);
+    }
 }
